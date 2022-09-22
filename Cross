@@ -1,0 +1,18 @@
+from random import randint
+player_1 = input('Имя 1-го игрока: ')
+player_2 = input('Имя 2-го игрока: ')
+
+playing_field = [['', '', ''],
+                 ['', '', ''],
+                 ['', '', '']]
+
+one_motion = randint(1,2)
+print(one_motion)
+if one_motion == 1:
+    x_team = player_1
+    y_team = player_2
+else:
+    x_team = player_2
+    y_team = player_1
+    
+while game not False:
